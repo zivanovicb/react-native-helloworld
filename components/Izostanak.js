@@ -20,13 +20,15 @@ export default class NeopIzostanakravdani extends Component{
   render(){
     const {datum,razlog,tip} = this.props;
     const {boja} = this.state;
-    const stilovi = StyleSheet.flatten([styles.izostanak,{backgroundColor:boja}])
+    const stilovi = StyleSheet.flatten([styles.izostanak,{backgroundColor: boja}])
     return(
       <TouchableHighlight
-        onPress={this.onPress}
-        style={stilovi}>
+        onPress={this.onPress}>
+        <View style={stilovi}>
           <Text style={{color:'white'}}>{razlog}</Text>
           <Text style={{color:'white'}}>{datum}</Text>
+
+        </View>
       </TouchableHighlight>
     )
   }
