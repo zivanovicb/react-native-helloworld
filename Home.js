@@ -34,10 +34,6 @@ export default class Home extends Component{
   render(){
     return(
       <View>
-        <Text style={styles.welcome}>
-          Babo i izostanci
-        </Text>
-
         <DodajIzostanak dodajIzostanak={this.dodajIzostanak}/>
         <Neopravdani neopravdani={this.state.neopravdani}/>
         <Opravdani opravdani={this.state.opravdani}/>
@@ -45,12 +41,4 @@ export default class Home extends Component{
       );
     }
 }
-
-const styles = StyleSheet.create({
-  welcome: {
-    fontSize: 40,
-    textAlign: 'center'
-  }
-});
-
 AppRegistry.registerComponent('Home',() => Home);

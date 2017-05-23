@@ -16,6 +16,7 @@ import {
 
 
 import Home from './Home';
+import LoginScreen from './LoginScreen';
 
 export default class Izostanci extends Component {
   render() {
